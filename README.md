@@ -40,7 +40,7 @@ cases/CASE-NNN-slug/
 ```
 cases/CASE-NNN/
     ↓ (порождает)
-DS-cattle-operations/decisions/DL-NNN.md
+decisions/DL-NNN.md
     ↓ (формализуется в)
 PACK-*/pack/rules/RULE-NNN.md
     ↓ (применяется к следующему)
