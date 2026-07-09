@@ -39,7 +39,7 @@ if [ -e "$CASE_DIR" ]; then
     exit 1
 fi
 
-mkdir -p "$CASE_DIR"/{raw,charts,reports,scripts}
+mkdir -p "$CASE_DIR"/{raw,charts,reports,scripts,Rations}
 cp "$TEMPLATE" "$CASE_FILE"
 
 TODAY="$(date +%Y-%m-%d)"

@@ -34,10 +34,10 @@
    - `raw/` — исходные данные;
    - `charts/` — графики;
    - `reports/` — отчёты;
-   - `scripts/` — скрипты генерации.
+   - `scripts/` — скрипты генерации;
+   - `Rations/` — изменения в рационах.
 3. **Статусы кейса:** `raw` → `processed` → `archived`.
 4. **Валидация** перед коммитом: `bash scripts/case-validate.sh --all`.
-5. **Не редактировать** `cases/README.md` вручную — он поддерживается CI.
 
 ## Automation
 

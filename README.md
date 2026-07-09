@@ -33,6 +33,7 @@ cases/CASE-NNN-slug/
   charts/            # визуализации (png)
   reports/           # отчёты (md, docx)
   scripts/           # скрипты генерации графиков
+  Rations/           # изменения в рационах (AMTS, PDF, XLSX)
 ```
 
 ## Связь с другими слоями
