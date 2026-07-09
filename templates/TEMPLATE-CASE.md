@@ -1,0 +1,112 @@
+# TEMPLATE: CASE-XXX — Шаблон сырого кейса
+
+```yaml
+---
+case_id: CASE-001
+date: YYYY-MM-DD
+date_updated: YYYY-MM-DD
+farm: [название/код фермы]
+author: [кто зафиксировал]
+category: [metabolic|reproduction|nutrition|economics|management]
+tags: [ketosis, bhb, dmi, bcs]
+status: raw|processed|archived
+dl_ref: [DL-XXX или пусто]
+source_report: [CASE-XXX/reports/Отчет_...md или пусто]
+fpf_context: []  # Автоматически заполняется агентом через fpf_reference
+---
+```
+
+# CASE-001: [Краткое описание ситуации]
+
+> Шаблон: [templates/TEMPLATE-CASE.md](../templates/TEMPLATE-CASE.md)  
+> Конвейер: CASE → DL → RULE  
+> Связанный DL: [../../DS-cattle-operations/decisions/DL-001.md](../../DS-cattle-operations/decisions/DL-001.md)
+
+---
+
+## Контекст (до)
+
+**Параметры животного/группы:**
+- Порода: 
+- Лактация: 
+- Дни отёла (DIM): 
+- BCS: 
+- Производство: 
+
+**Условия содержания:**
+- Рацион: 
+- DMI (факт/норма): 
+- Условия: 
+
+**Исходные показатели:**
+- BHB: 
+- NEFA: 
+- Другие лабораторные: 
+
+---
+
+## Действие (интервенция)
+
+**Что делали:**
+[Описание действий, вмешательств]
+
+**Изменения:**
+- В рационе: 
+- В управлении: 
+- В лечении: 
+
+---
+
+## Результат (после)
+
+**Показатели после:**
+- BHB: 
+- Производство: 
+- BCS: 
+
+**Сроки:**
+- Действие проведено: 
+- Результат зафиксирован: 
+
+**Финансовый эффект (если известен):**
+- Затраты: 
+- Выгода: 
+
+---
+
+## Сырые данные
+
+**Отчёты:**
+- Markdown: [reports/Отчет_YYYY-MM-DD.md](CASE-XXX/reports/Отчет_YYYY-MM-DD.md)
+- DOCX/PDF: [reports/...](CASE-XXX/reports/)
+
+**Исходные таблицы:**
+- [raw/data.xlsx](CASE-XXX/raw/data.xlsx)
+
+**Визуализации:**
+- [charts/chart.png](CASE-XXX/charts/chart.png)
+
+---
+
+## Примечания
+
+**Что необычного:**
+[Выделить особенности, отклонения от стандарта]
+
+**Вопросы:**
+[Что осталось непонятным]
+
+**Связанные кейсы:**
+- [CASE-YYY](CASE-YYY.md): [краткое пояснение]
+
+## FPF-основание
+
+> **Автоматически подобрано через `fpf_reference`:**
+> - IDs: 
+> - Constraints: 
+> - Gaps: 
+
+---
+
+*Формат: CASE → DL → RULE*  
+*Следующий шаг: Создать DL на основе этого кейса*

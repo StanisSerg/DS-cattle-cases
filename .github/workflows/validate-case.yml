@@ -1,0 +1,24 @@
+name: Validate Cases
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate all cases
+        run: bash scripts/case-validate.sh --all
+
+      - name: Check cases/README.md exists
+        run: |
+          if [ ! -f "cases/README.md" ]; then
+            echo "FAIL: cases/README.md is missing"
+            exit 1
+          fi
+          echo "PASS: cases/README.md exists"

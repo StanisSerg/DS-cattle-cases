@@ -1,0 +1,956 @@
+kp Forage 0,01
+kp Conc 0,05
+kp Liquid 0,10
+Total RDCA1 (g) 0,00
+Total RDCA2 (g) 205,17
+Total RDCA3 (g) 0,00
+Total RDCA4 (g) 361,84
+Total RDCB1 (g) 3522,90
+Total RDCB2 (g) 643,28
+Total RDCB3 (g) 2454,71
+Total RDCC (g) 0,00
+Total RDPA1 (g) 40,23
+Total RDPA2 (g) 652,07
+Total RDPB1 (g) 974,13
+Total RDPB2 (g) 81,32
+Total RDPC (g) 0,00
+Total Energy Allowable ­ FC Bact
+(g)713,87
+Total Energy Allowable ­ NFC
+Bact (g)1719,21N Intake (g) 482,23
+Dietary NH3 (g) 6,44
+Recycled NH3 (g) 48,67
+Peptide NH3 (g) 158,47
+NH3 Supply (g) 213,58
+FC Bact ­ NH3 Available (g) 156,27
+FC Bact ­ NH3 Required (g) 71,39
+NFC Bact ­ NH3 Required (g) 57,31
+N Allowable Bact (g) 3281,93
+Total Rumen N Available (g) 328,19
+Total Rumen N Required (g) 243,31
+Total FC Bacterial Yield (g) 713,87
+Total NFC Bacterial Yield (g) 1719,21
+Bacterial NFC N Yield (g) 171,92
+Total Bacterial N Yield (g) 243,31
+Rumen CHO Degraded (g) 7187,89
+Rumen Protein Degraded (g) 1747,74
+Rumen CHO Escape (g) 4027,85
+Rumen Protein Escape (g) 962,01
+MP ­ MET (g) 37,16
+MP ­ LYS (g) 109,88
+MP ­ HIS (g) 45,07
+MP ­ THR (g) 79,00Advanced Rumen Values Report
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+MP MP AA Supply Duodenal AA Flow
+Rulquin Ratio % Rqd Balance
+(g/day)Rqd
+(g/day)Total
+(g/day)Tissue
+(g/day)Bact
+(g/day)RUP
+(g/day)Total
+(g/day)Bact
+(g/day)RUP
+(g/day)
+MET
+2,28 85.06% ­6,53 43,69 37,16 0,00 24,45 12,71 50,87 33,58 17,29
+LYS
+6,74 88.24% ­14,64 124,53 109,88 0,00 74,82 35,06 143,15 96,11 47,05
+ARG
+6,28 110.11% 9,41 93,11 102,53 0,00 63,50 39,02 129,85 78,03 51,82
+THR
+4,84 115.76% 10,75 68,25 79,00 0,00 51,00 28,00 101,21 63,55 37,66
+LEU
+7,43 73.33% ­44,08 165,31 121,23 0,00 68,52 52,71 159,85 90,95 68,90
+ILE
+4,93 93.40% ­5,69 86,14 80,45 0,00 53,65 26,80 104,25 68,86 35,40
+VAL
+5,56 93.55% ­6,25 96,99 90,73 0,00 56,20 34,53 120,31 74,07 46,24
+HIS
+2,76 107.95% 3,32 41,75 45,07 0,00 24,54 20,53 59,12 31,16 27,96
+PHE
+4,85 86.08% ­12,78 91,82 79,04 0,00 47,08 31,96 105,12 63,05 42,07
+TRP
+1,43 90.76% ­2,38 25,75 23,37 0,00 14,87 8,50 32,48 21,07 11,41
+Amino Acid MP Req.
+MET LYS ARG THR LEU ILE VAL HIS PHE TRP
+Amino Acid0,0020,0040,0060,0080,00100,00120,00 % Rqd73858688919394108110116LYS:MET 2.96
+MET 2.1 ­ 2.5
+LYS 6.15 ­ 7.2
+ARG >5
+THR >4.6
+LEU <8.7
+ILE 4.7 ­ 5.0
+VAL >5.8
+HIS 2.5 ­ 5.1
+PHE 4.9 ­ 5.1
+TRP <1.4Amino Acid Report
+AMTS Nutrition
+RecommendedFarm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+Feed Sugar Starch Sol. Fiber aNDFom Total
+kg %A4 kg %B1 kg %B2 kg%aNDFom
+kg %DM
+Солома 0,0 80,2 0,0 86,3 0,0 96,4 0,2 55,4 0,2 51,0
+Сенаж Ленинский 0,0 67,0 0,0 86,3 0,2 96,9 0,5 43,7 0,9 35,5
+Кукуруза средний помол (КК № 1 раздой)
+0,0 80,2 1,3 71,6 0,0 80,8 0,1 34,6 1,4 57,9
+Ячмень (КК №1 раздой) 0,0 80,2 0,9 75,9 0,1 80,8 0,2 39,0 1,2 54,4
+Шрот рапсовый (КК № 1 раздой) 0,1 80,2 0,1 88,0 0,1 86,3 0,2 38,4 0,6 26,7
+Трикальцийфосфат (КК № 1 раздой) 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0
+Мел (КК №1 раздой) 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0
+Соль (КК №1 раздой) 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0
+Мумикс транзит (КК №1 раздой) 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0
+Шрот соевый (КК № 1 раздой) 0,1 80,2 0,0 84,0 0,1 86,3 0,0 44,4 0,3 28,8
+Магния оксид (КК №1 раздой) 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0
+Сода (КК №1 раздой) 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0
+Калия карбонат (КК №1 раздой) 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0
+Силос Ленинский 0,0 67,0 1,2 81,5 0,1 96,4 1,2 64,2 2,7 58,0
+Water 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0
+0,4 77,8% 3,5 76,6% 0,6 90,5% 2,5 51,0% 7,2 44,6%
+Fermentability %DM 2,2% 21,9% 4,0% 15,2% 44,6%
+Key
+VFAs = CHO A1 (VFA's)
+Lactic = CHO A2 (Lactic)
+OOAs = CHO A3 (Other OAs)
+Sugar = CHO A4 (Sugar)
+Starch = CHO B1 (Starch)
+Sol. Fiber = CHO B2 (Sol. Fiber)
+pdNDF = CHO B3 (Avail. NDF)
+Unavail NDF = CHO­CCarbohydrate Fermentation
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+Feed:Gain VFAs Lactic OOAs Sugar Starch Sol.
+FiberpdNDF Unavail.
+NDFTotal
+Солома 0,0 0,0 0,0 2,0 3,0 3,2 60,3 18,6 87,1
+Сенаж Ленинский 2,9 4,7 0,0 2,2 1,5 10,2 23,7 24,1 69,2
+КК №1 раздой 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0
+Силос Ленинский 1,2 8,1 0,0 0,6 32,5 1,6 32,4 8,4 84,7
+Water 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0
+Key
+VFAs = CHO A1 (VFA's)
+Lactic = CHO A2 (Lactic)
+OOAs = CHO A3 (Other OAs)
+Sugar = CHO A4 (Sugar)
+Starch = CHO B1 (Starch)
+Sol. Fiber = CHO B2 (Sol. Fiber)
+pdNDF = CHO B3 (Avail. NDF)
+Unavail NDF = CHO­CCarbohydrate Pools %DM
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+aNDFom (%DM) 29,88
+Forage NDF (%NDF) 70,62
+Forage NDF (%DM) 21,10
+peNDF (%) 22,50
+Lignin (%DM) 3,39
+Lignin (%NDF) 11,27
+NFC (%) 39,70
+Silage Acids (%) 3,85
+Sugar (%) 2,89
+Starch (%) 28,55
+Sol. Fiber (%) 4,41
+Fermentable CHO
+(%CHO)64,09
+Fermentable CHO
+(%DM)44,59ME Bal (Mcal) ­8,35
+MP Bal (g) ­159,07
+NP/MP (%) 67,00
+Bact. MP (%MP) 55,93CP (%) 16,81
+RUP (%CP) 35,50
+LCFA (%) 2,11
+EE (%) 3,01
+Pept (g):158,47 Pept & NH3 (g): 84,89
+% Rqd: 238,27 % Rqd: 165,96
+MET (g) ­6,53
+MET (%Rqd) 85,06
+MET (%MP) 2,28
+LYS (g) ­14,64
+LYS (%Rqd) 88,24
+LYS (%MP) 6,74
+LYS:MET 2,96Milk (kg) Milk Fat
+(%)TP (%)
+Trg 25,00 3,70 3,15
+ME 17,51
+MP 21,62Cost ($) 0,00
+DMI (kg/day) 16,12
+IOFC ($) 0,00
+Model 19,90
+% Model 80,99Ration DM (%): 45,37
+Forage DM (%): 46,85ME & MP Production
+Rumen N Balance
+Amino Acid BalanceCNCPS Report
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+Ingredient $/head
+% DMDM Fed As­Fed
+Солома 0,00 92,00% 0,4 0,4
+Сенаж
+Ленинский0,00 43,00% 2,5 5,8
+КК №1 раздой 0,00 89,18% 8,5641 9,6034
+Силос
+Ленинский0,00 40,00% 4,7 11,6
+Water 0,00 0,05% 0,0040 8,0244
+Totals 0,00
+45,37%16,12 35,53Diet Summary
+AMTS Nutrition
+Nutrient DM AF
+DM (%) 100 45,37
+Forage (%) 46,85 50,38
+CP (%) 16,81 7,63
+RUP (%CP) 35,50 35,50
+RDP (%CP) 64,50 64,50
+RDP (%) 10,84 4,92
+SP (%CP) 35,17 35,17
+ME (Mcal/kg) 2,46 1,12
+NEl (Mcal/kg) 1,58 0,72
+NEm (Mcal/kg) 1,57 0,71
+NEg (Mcal/kg) 0,97 0,44
+ADF (%) 19,61 8,90
+aNDFom (%) 29,88 13,56
+Forage (%NDF) 70,62 70,62
+Forage NDF (%) 21,10 9,57
+Forage NDF (%BW) 0,49 0,22
+peNDF (%) 22,50 10,21
+Lignin (%NDF) 11,27 70,62
+NFC (%) 39,70 18,01
+Lactic (%) 3,07 1,39
+Silage Acids (%) 3,85 1,75
+Other Acids (%) 0 0
+Sugar (%) 2,89 1,31
+Starch (%) 28,55 12,95
+Sol. Fiber (%) 4,41 2,00
+EE (%) 3,01 1,37
+LCFA (%) 2,11 0,96
+Ash (%) 10,60 4,81
+Cost ($/Day) 0,00Nutrient DM AF
+DM (%) 100 45,37
+Ca (%) 0,90 0,41
+P (%) 0,53 0,24
+Mg (%) 0,51 0,23
+K (%) 1,47 0,66
+S (%) 0,23 0,10
+Na (%) 0,55 0,25
+Cl (%) 0,57 0,26
+Fe (ppm) 210,31 95,43
+Zn (ppm) 68,24 30,96
+Cu (ppm) 16,60 7,53
+Mn (ppm) 68,44 31,05
+Se (ppm) 0,58 0,26
+Co (ppm) 0,66 0,30
+I (ppm) 0,98 0,44
+Vit­A (KIU/kg) 5,94 2,70
+Vit­D (KIU/kg) 1,27 0,58
+Vit­E (IU/kg) 97,08 44,05
+DCAD1 (meq/kg) 310,80 141,02
+DCAD2 (meq/kg) 244,20 110,81
+Additive Total Diet Conc.
+Monensin 0.00 mg 0.00 ppm
+Lasalocid 0.00 mg 0.00 ppm
+Decoquinate 0.00 mg 0.00 ppm
+Yeast 0.00 mg
+10^6 cfu0.00 10^6
+Beta Agonist 0.00 mg 0.00 ppm
+Virginiamycin 0.00 mg 0.00 ppm
+Aureomycin 0.00 mg 0.00 ppm
+Chlortetracycline 0.00 mg 0.00 ppm
+Oxytetracycline 0.00 mg 0.00 ppm
+Salinomycin 0.00 mg 0.00 ppm
+Zinc Bacitracin 0.00 mg 0.00 ppm
+Enzymes 0.00
+act/kg0.00 act/kg
+Toxin Binders 0.00 mg 0.00 ppm
+Flavor 0.00 kg 0.00 %DMCost/MT As­Fed: $Br0,00Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+Ingredients DM Fed
+As­Fed
+Солома 0,4 0,4
+Сенаж Ленинский 2,5 5,8
+КК №1 раздой 8,5641 9,6034
+Силос Ленинский 4,7 11,6
+Water 0,0040 8,0244
+Totals 16,12 35,53N P
+Intake (g) 433,56 84,67
+Productive (g) 137,79 21,81
+Urine (g) 152,18 1,40
+Fecal (g) 156,56 61,46
+Total Manure (g) 308,75 62,85
+Productive N/Total N 32%
+Productive N/Urinary N 91%
+Manure N/Total N 71%
+Productive P/Total P 26%
+Manure P/Total P 74%Total Fecal (kg) 26,85
+Total Urine (kg) 17,31
+Total Wet Manure (kg) 44,16
+Total Liters/day 630.20
+Total kg/day 0.40
+grams/kg ECM 23,00
+kg/day CO2 Equiv 10.50
+Total grams/day 10.50
+CO2 Equiv grams/day 21.00
+grams/kg ECM 579,60
+g CO2 Equiv/kg ECM 1 159,30Methane
+CO2Excretion & Emissions Report
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+Fatty AcidInput
+(grams/day)Lipolysed
+(grams/day)Duodenal
+(grams/day)Absorbed
+(grams/day)Fecal
+(grams/day)Digested
+C12:04,37 4,36 4,37 4,17 0,20 95 %
+C14:03,19 3,12 3,19 2,40 0,80 75 %
+C16:050,95 49,15 70,45 51,06 19,39 72 %
+C16:11,35 1,34 4,05 2,59 1,46 64 %
+C18:07,89 7,73 253,78 184,76 69,02 73 %
+C18:1 Cis74,79 73,07 11,73 10,47 1,26 89 %
+C18:1 Trans0,12 0,12 14,19 11,15 3,04 79 %
+C18:2135,88 130,95 11,12 9,23 1,89 83 %
+C18:332,88 32,43 0,67 0,52 0,15 78 %
+Other28,63 28,46 48,78 28,64 20,14 59 %
+Ration340,06 330,73 422,34 304,98 117,36 72 %
+Total Unsaturate: 245.02Fatty Acids Report
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+Intake
+(g/day)Degraded
+(g/day)Feed Abs.
+(g/day)Microbial
+Abs.
+(g/day)Feed Fecal
+(g/day)Microbial Fecal
+(g/day)Bal w. Micro
+(g/day)Bal w.o. Micro
+(g/day)
+CHO
+11215,7 7187,9 1505,9 487,7 2521,9 25,7 ­513,4 0,0
+Protein2709,8 1747,7 720,9 1140,5 241,1 380,2 ­1520,7 0,0
+Fat485,2 0,0 306,5 217,1 42,5 58,4 ­139,4 136,1
+Ash1709,3 0,0 0,0 53,5 1709,3 53,5 ­107,1 0,0
+Ash w. Bact.
+Ash Adjust.1709,3 0,0 801,1 53,5 801,1 53,5 107,1 0,0Mass Balance Report
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+Metab Energy (Mcal /day) Metab Protein (g/day)
+Avail Rqd Diff Avail Rqd Diff
+Total39,62 47,97 ­8,35 1631,32 1790,38 ­159,07
+Maint39,62 19,53 20,10 1631,32 588,48 1042,84
+Preg20,10 0,03 20,06 1042,84 2,24 1040,60
+Lact20,06 27,87 ­7,80 1040,60 1175,37 ­134,77
+Growth­7,80 0,54 ­8,35 ­134,77 24,30 ­159,07
+Reserves­8,35 8,35 ­8,35 0 159,07 ­159,07
+Blank
+DMI Predicted19,9 kg/day
+Pept & NH3 Bal84.89 g/d 165,96%
+DMI Actual16.12 kg/day
+Pept Bal158.47 g/d 238,27%
+Predicted Ruminal pH6,38
+Urea Cost0.26 Mcal/d
+Blank
+Target Growth0.07 kg/day
+Target Milk25.00 kg/day
+Inputted Growth0.05 kg/day
+ME Allowable Growth0.00 kg/day
+ME Allowable Milk17.51 kg/day
+MP Allowable Growth0.00 kg/day
+MP Allowable Milk21.62 kg/day
+Conceptus Weight1.14 kg
+Conceptus Gain0.02 kg/day
+Blank
+Weight Change due to Reserves: ­2.19 kg/day
+Days to Change: 58
+Blank
+peNDF Rqd3.71 kg/day
+MP from Bact912.41 g/day
+peNDF Supp3.63 kg/day
+MP from RUP718.91 g/day
+peNDF Cap7.34 kg/day
+NDF in Ration29.88 %DM
+Diet CP16,81 %DM
+NFC in Ration39.70 %DM
+RDP64,50 %CP
+Diet ME2.46 Mcal/kg DM
+RDP10,84 %DM
+Diet NEl1.58 Mcal/kg DM
+Soluble Protein35,17 %CP
+Diet NEm1.57 Mcal/kg DM
+Diet NEg0.97 Mcal/kg DM
+Predicted MUN8.23 mg/dlMet. E & P Evaluation
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+Nutrient Diet ConcentrationDiet Intake
+Added Water Intake Absorbed Absorbed
+SuppliedAbsorbed Balance Absorbed
+RqdOrganic
+(%Total)
+C a 0,90 %DM 144,66 85,42 0,00 93,34 51,90 41,44 g/day 180 ­
+P 0,53 %DM 84,67 18,35 ­ 59,74 39,33 20,41 g/day 152 ­
+Mg 0,51 %DM 81,87 42,88 ­ 27,03 5,70 21,33 g/day 474 ­
+K 1,47 %DM 236,23 53,26 0,00 212,60 161,07 51,54 g/day 132 ­
+S 0,23 %DM 37,21 1,44 0,00 37,21 32,24 4,97 g/day 115 ­
+N a 0,55 %DM 88,81 81,43 0,00 79,93 42,37 37,55 g/day 189 ­
+C l 0,57 %DM 91,43 58,00 0,00 82,29 43,24 39,05 g/day 190 ­
+F e 210,31 ppm 3390,23 998,54 0,00 339,02 25,75 313,27 mg/day 1316 0,00
+Z n 68,24 ppm 1099,97 577,89 0,00 165,00 128,27 36,72 mg/day 129 0,00
+C u 16,60 ppm 267,62 154,23 0,00 10,70 9,11 1,60 mg/day 118 0,00
+Mn 68,44 ppm 1103,21 574,83 0,00 9,80 2,15 7,65 mg/day 455 0,00
+S e 0,58 ppm 9,35 5,47 ­ 9,35 4,84 4,52 mg/day 193 0,00
+C o 0,66 ppm 10,67 7,80 ­ 10,67 1,77 8,90 mg/day 602 0,00
+I 0,98 ppm 15,73 15,05 ­ 13,37 10,48 2,89 mg/day 128 ­
+V it ­ A 5,94 KIU/kg 95,79 95,79 ­ 95,79 76,87 18,92 KIU/day 125 ­
+V it ­ D 1,27 KIU/kg 20,53 20,53 ­ 20,53 20,97 ­0,44 KIU/day 98 ­
+V it ­ E 97,08 IU/kg 1565,00 1532,71 ­ 1565,00 559,09 1005,92 IU/day 280 ­
+D C A D 1 311 meq/kg ­ ­ ­ ­ ­ ­ ­ ­ ­
+D C A D 2 244 meq/kg ­ ­ ­ ­ ­ ­ ­ ­ ­
+N iac i n 0,05 %DM 8,21 ­ ­ ­ ­ ­ ­ ­ ­
+B iot in 0,00 ppm 0,00 ­ ­ ­ ­ ­ ­ ­ ­
+C ho l i ne 254,68 ppm 4105,46 ­ ­ ­ ­ ­ ­ ­ ­
+C h r o m i u m 0,00 ppm 0,00 ­ ­ ­ ­ ­ ­ ­ 0,00Min/Vit Report
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+MUN (mg/dl) 8,23
+Rumen pH 6,38Diet Concentrations ExcretionNutrient Balances
+Ration FedNutrient Balance % Rqd
+ME Mcal ­8,35 82,60
+MP (g) ­159,07 91,12
+NH3 (g) 84,89 165,96
+Peptide­N (g) 158,47 238,27
+peNDF (kg) ­0,08 97,83
+LYS (g) ­14,64 88,24
+MET (g) ­6,53 85,06
+Ca (g) 41,44 179,84
+P (g) 20,41 151,90
+Mg (g) 21,33 474,00
+K (g) 51,54 132,00CH4 (Mcal) / CH4 (L) 5.77 / 630.24
+Fecal (kg) 26,8
+Urine (kg) 17,3
+Total Manure (kg) 44,2
+Fecal N (g) 156,56
+Urine N (g) 152,18
+Total Manure N (g) 308,75
+Productive N:Total N 0.32:1
+Productive N:Urinary N 0.91:1
+Manure N:Total N 0.71:1
+Fecal P (g) 61,46
+Urine P (g) 1,40
+Total Manure P (g) 62,85
+Productive P:Total P 0.26:1
+Manure P:Total P 0.74:1NFC (%DM) 39,70
+Ferm. CHO (%DM) 44,59
+CHO (%CHO) 64,09
+NDF Ferm. (%DM) 15,23
+NDF Ferm. (%NDF) 50,96
+Fermentable Starch (%DM) 21,85
+Fermentable Starch
+(%Starch)76,55
+Sol. Fiber (%DM) 3,99
+Sol. Fiber Ferm. (% Sol.
+Fiber)90,48
+Fermentable Sugar (%DM) 2,24
+Sugar Ferm. (% Sugar) 77,79
+Sugar (A4) (%DM) 2,89
+Starch (B1) (%DM) 28,55
+Sol Fiber (B2) (%DM) 4,41
+Ferm. Fiber (B3) (%DM) 20,75
+Lig * 2.4 (C) (%DM) 8,14
+aNDFom (%DM) 29,88
+Forage NDF (%NDF) 70,62
+Forage NDF( %FBW) 0,49
+EE (%DM) 3,01
+LCFA (%DM) 2,11
+CP (%DM) 16,81
+RDP (%DM) 10,84
+LYS (%MP) 6,74
+MET (%MP) 2,28
+LYS:MET 2,96
+TDN (%DM) 65,30
+ME (Mcal/kg) 2,46
+NEl (Mcal/kg) 1,58
+Forage (%DM) 46,85
+DM (%) 45,37
+DCAD1 (meq/kg) 311
+DCAD2 (meq/kg) 244Total ME Avail. (Mcal/day) 39,62
+ME Milk Prod (kg/day) 17,51
+MP Milk Prod (kg/day) 21,62
+IOFC ($//Hd) 0,00
+IOpurFC ($//Hd) 0,00
+Urea Cost Mcal 0,26
+Milk:Feed 1,09EconomicsCost/MT As­Fed: $0,00
+Ingredient$/head
+%DMDM Fed
+As­Fed
+92,00Солома 0,00 0,4 0,4
+43,00Сенаж Ленинский 0,00 2,5 5,8
+КК №1 раздой 0,00 8,5641 9,6034
+40,00Силос Ленинский 0,00 4,7 11,6
+0,05Water 0,00 0,0040 8,0244
+Totals 0,00 45,37 16,12 35,53One Page Summary
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+FeedaTDN (%DM) ME
+(Mcal/kg)NEm
+(Mcal/kg)NEg
+(Mcal/kg)NEl
+(Mcal/kg)CP (%DM) RUP
+(%DM)RUP
+(%CP)
+Солома 45 1,56 0,72 0,19 1,00 4,8 2,0 41,7
+Сенаж Ленинский 49 1,75 0,91 0,37 1,13 18,0 5,0 27,7
+КК №1 раздой 63 2,43 1,60 1,03 1,56 22,0 9,0 35,3
+Силос Ленинский 66 2,50 1,61 1,01 1,61 7,6 1,3 17,7
+Water 0 0,00 0,00 0,00 0,00 0,0 0,0 0,0P & E
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+Feed CP RDP Duo. Prt.
+FlowDuo. Prt.
+Dig.CP Digest. RDP RUP RUP Digest.
+g g g g %CP %DM %CP %DM %CP %RUP
+Солома 18 11 8 3 77,2 2,8 58,3 2,0 18,9 45,4
+Сенаж Ленинский 452 327 125 89 92,0 13,0 72,3 5,0 19,7 71,0
+К у к у р у за  ср е д н и й  п о м о л  (К К  № 1  р а зд о й )
+213 122 91 78 93,7 5,1 57,1 3,9 36,7 85,4
+Ячмень (КК №1 раздой) 269 187 83 68 94,6 8,7 69,4 3,8 25,2 82,3
+Шрот рапсовый (КК № 1 раздой) 916 479 437 286 83,5 21,8 52,3 19,9 31,2 65,4
+Трикальцийф осф ат (КК № 1 раздой)
+0 0 0 0 0,0 0,0 0,0 0,0 0,0 0,0
+Мел (КК №1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0 0,0 0,0
+Соль (КК №1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0 0,0 0,0
+Мумикс транзит (КК №1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0 0,0 0,0
+Шрот соевый (КК №1 раздой) 490 333 156 147 98,2 35,1 68,1 16,4 30,1 94,3
+Магния оксид (КК №1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0 0,0 0,0
+Сода (КК №1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0 0,0 0,0
+Калия карбонат (КК №1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0 0,0 0,0
+Силос Ленинский 351 289 62 50 96,4 6,2 82,3 1,3 14,1 79,8
+Water 0 0 0 0 0,0 0,0 0,0 0,0 0,0 0,0
+Diet 2 710 1 748 962 721 91 10,8 64,5 6,0 26,6 74,9
+Key
+Ammonia = A1
+Soluble True Protein = A2
+Insoluble non­bound = B1
+NDICP ­ ADICP = B2
+Unavail = C
+A1 + A2 = Soluble Protein
+B1 = CP ­ (A1 + A2 + B2 + C)Protein Digestibility
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+Feed A1 A2 B1 B2 C Total
+Солома 0 7 5 2 4 18
+Сенаж Ленинский 26 245 98 48 35 452
+КК №1 раздой 0 0 0 0 0 0
+Силос Ленинский 16 241 70 13 12 351
+Water 0 0 0 0 0 0
+42 911 1 407 116 234 2 710
+Key
+Ammonia = A1
+Soluble True Protein = A2
+Insoluble non­bound = B1
+NDICP ­ ADICP = B2
+Unavail = C
+A1 + A2 = Soluble Protein
+B1 = CP ­ (A1 + A2 + B2 + C)Protein Pools g/d
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15%(True) 3.39%(Crude)
+Feed A1 A2 B1 B2 C
+Солома 0,0 38,7 26,2 13,0 22,0
+Сенаж Ленинский 5,8 54,2 21,7 10,5 7,8
+КК №1 раздой 0,0 0,0 0,0 0,0 0,0
+Силос Ленинский 4,5 68,5 20,0 3,6 3,4
+Water 0,0 0,0 0,0 0,0 0,0
+Key
+Ammonia = A1
+Soluble True Protein = A2
+Insoluble non­bound = B1
+NDICP ­ ADICP = B2
+Unavail = C
+A1 + A2 = Soluble Protein
+B1 = CP ­ (A1 + A2 + B2 + C)Protein Pools %CP
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15%(True) 3.39%(Crude)
+Feed A1 A2 B1 B2 C Total
+Солома 0,0 1,9 1,3 0,6 1,1 4,8
+Сенаж Ленинский 1,0 9,7 3,9 1,9 1,4 18,0
+КК №1 раздой 0,0 0,0 0,0 0,0 0,0 0,0
+Силос Ленинский 0,3 5,2 1,5 0,3 0,3 7,6
+Water 0,0 0,0 0,0 0,0 0,0 0,0
+Key
+Ammonia = A1
+Soluble True Protein = A2
+Insoluble non­bound = B1
+NDICP ­ ADICP = B2
+Unavail = C
+A1 + A2 = Soluble Protein
+B1 = CP ­ (A1 + A2 + B2 + C)Protein Pools %DM
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15%(True) 3.39%(Crude)
+As­Fed Intake(kg/day) 35,53
+DM Intake(kg/day) 16,12
+Crude Protein(kg/day) 2,71
+RUP 962,01
+RDP (g) 1,75
+Sol. CP(%CP) 35,17
+Sol. CP(%DM) 5,91
+Urea (g) 0,00
+ADF (%DM) 19,61
+aNDFom (%DM) 29,88
+Forage (%DM) 46,85
+Forage NDF (%DM) 21,10
+peNDF (%DM) 22,50
+Lignin (%DM) 11,27
+NFC (g) 6399,28
+NFC+NDIP (g) 6399,66Sil Acids (A1) (kg/day) 0,13
+Sugar (A2) (kg/day) 0,47
+Starch (B1) (kg/day) 4,60
+Sol Fiber (B2) (kg/day) 0,71
+Fat Total (%DM) 3,01
+Fat Veg Unpr (%DM) 0,00
+NEl (Mcal) 25,52
+NEg (Mcal) 15,64
+NEm (Mcal) 25,30
+Ca (g) 144,66
+P (g) 84,67
+Mg (g) 81,87
+K (g) 236,23
+S (g) 37,21Dry Matter (%) 45,37
+CP (%) 16,81
+RUP (%CP) 35,50
+RUP (%DM) 5,97
+RDP (%CP) 64,50
+RDP (%DM) 10,84
+Sol. CP(%CP) 35,17
+Urea (kg) 0
+MP Supply (g) 1631,32
+LYS (%MP) 6,74
+MET (%MP) 2,28
+LYS:MET 2,96
+ME Milk Prod(kg/day) 17,51
+MP Milk Prod(kg/day) 21,62
+aNDFom (%DM) 29,88
+ADF (%DM) 19,61
+Forage (%DM) 46,85
+Forage NDF (%DM) 21,10
+peNDF (%DM) 22,50
+Lignin (%DM) 3,39
+NFC (%DM) 39,70
+SugarA2(%DM) 2,89
+StarchB2(%DM) 28,55
+Sol. Fiber B2 (%DM) 4,41
+Ferm. CHO (%DM) 44,59
+Fat Total(%DM) 3,01
+ME (Mcal/kg) 2,46
+Ca (%DM) 0,90
+P (%DM) 0,53
+Mg (%DM) 0,51
+K (%DM) 1,47
+S (%DM) 0,23
+Na (%DM) 0,55
+Cl (%DM) 0,57
+Salt (%DM) 0,59
+DCAD1 (meq/kg) 310,80
+Co (ppm) 0,66
+Cu (ppm) 16,60
+I (ppm) 0,98
+Fe (ppm) 210,31
+Mn (ppm) 68,44
+Zn (ppm) 68,24
+Se Added (ppm) 5,47
+Vit­A (KIU/day) 95,79
+Vit­D (KIU/day) 20,53ID Ingredient As­Fed Ingredient
+DM PercentDM Fed Feed
+Cost($/MT) %DM %AF %Cost
+92,0003086 Солома 0,4 0,4 0,00 0 2,38 1,18 ERROR
+43,0004052 Сенаж
+Ленинский5,8 2,5 0,00 0 15,59 16,45 ERROR
+M071421 КК №1
+раздой9,6034 8,5641 0,00 0 53,13 27,03 ERROR
+40,0003022 Силос
+Ленинский11,6 4,7 0,00 0 28,87 32,75 ERROR
+0,0512001 Water 8,0244 0,0040 0,00 0 0,02 22,59 ERROR
+35,53 16,12 0,00Nutrient Analysis
+Nutrient AmountsRation Report
+AMTS Nutrition
+Ration FedFarm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+RDP AA
+Feed CP RDP tRDP RD­LEU RD­ILE RD­VAL RD­PHE RD­BCAA
+g g g g g g g g
+Солома 18 11 11 1 0,4 0,6 0,5 1,8
+Сенаж Ленинский 452 327 301 22 13,5 16,6 14,2 52,1
+Кукуруза средний помол (КК №1 раздой) 213 122 122 15 4,1 5,6 5,9 24,3
+Ячмень (КК №1 раздой) 269 187 187 13 6,4 9,0 9,5 28,0
+Шрот рапсовый (КК №1 раздой) 916 479 479 29 16,3 23,2 19,1 68,5
+Трикальцийфосфат (КК № 1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0
+Мел (КК №1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0
+Соль (КК №1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0
+Мумикс транзит (КК №1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0
+Шрот соевый (КК №1 раздой) 490 333 333 25 15,1 15,8 16,9 56,2
+Магния оксид (КК №1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0
+Сода (КК №1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0
+Калия карбонат (КК №1 раздой) 0 0 0 0 0,0 0,0 0,0 0,0
+Силос Ленинский 351 289 274 25 9,9 13,0 11,3 47,6
+Water 0 0 0 0 0,0 0,0 0,0 0,0
+Diet 2 710 1 748 1 708 129 66 83,8 77,4 278,5
+Bacterial Duo.Flow 91 69 74,1 63,0 233,9tRDP = Rumen Degraded True Protein (RDP­A1)Rumen Degraded BCAA and Microbial
+BCAA
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15%(True) 3.39%(Crude)
+Printed by:Starch Intake, g/d 4601.89
+3522.90 g/dRumen Starch
+Degraded:
+76.55 % Starch
+21.85 % DMIntestinal Starch
+861.95 g/dDigested:
+79.89 % Starch Entering
+5.35 % DM
+217.04 g/d Fecal StarchFecal Starch
+95.28 % Starch Digested Total Tract4.27 % DM Fecal StarchStarch Flow
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+Inputted DMI (kg/day) 16,12
+Inputted/MinPredicted DMI 80,99
+DM (%) 45,37
+Cost/head Br0,00
+Cost/100 kg Milk Br0,00
+Cost/100 kg ECM Br0,00
+IOFC Br0,00
+IOpurFC Br0,00
+Milk:Feed 1,09
+ECM:Feed 1,12ME MP
+Supply 39,62 1631,32
+Maintenance 19,53 588,48
+Pregnancy 0,03 2,24
+Lactation 27,87 1175,37
+Growth 0,54 24,30
+Balance ­8,35 ­159,07
+% Required 82,60 91,12
+Allowable Milk kg/day 17,51 21,62
+Inputted Milk kg/day 25,00
+Inputted ECM kg/day 25,82
+CP (%DM) 16,81
+SP (%CP) 35,17
+RDP (%DM) 10,84
+Ether Extract (%DM) 3,01
+LCFA (%DM) 2,11
+Total Unsaturate kg/day 245,02
+NFC (%DM) 39,70
+Total Ferm. CHO (%CHO) 64,09
+Ash (%DM) 10,60
+Forage (%DM) 46,85
+aNDFom (%DM) 29,88
+Forage NDF (%DM) 21,10
+Forage NDF (%NDF) 70,62
+Forage NDF (%BW) 0,49
+ME (Mcal/kg) 2,46
+NEl (Mcal/kg) 1,58
+NEm (Mcal/kg) 1,57
+NEg (Mcal/kg) 0,97
+Days to Change 1 BCS 58
+Peptides (%Rqd) 238,27
+Rumen NH3 (%Req) 165,96
+peNDF (%DM) 22,50
+Rumen pH 6,38
+MP from Bact (%) 55,93
+MUN (mg/dl) 8,23
+Urea Cost (Mcal) 0,26%Rqd %MP
+MET 85,06 2.28%
+LYS 88,24 6.74%
+HIS 107,95 2.76%
+LYS:ME 2,96Pool Sizesgrams
+%DM
+CHO A1 (VFA's) 126,85 0,79
+CHO A2 (Lactic) 494,48 3,07
+CHO A3 (Other OAs) 0,00 0
+CHO A4 (Sugar) 465,12 2,89
+CHO B1 (Starch) 4601,89 28,55
+CHO B2 (Sol. Fiber) 710,94 4,41
+CHO B3 (Avail. NDF) 3344,70 20,75
+CHO C (2.4 * Lig) 1471,77 9,13
+Prt A1 (NH3) 42,22 0,26
+Prt A2 (True Sol.) 910,69 5,65
+Prt B1 (True Prt.) 1406,53 8,73
+Prt B2 (NDIN ­ ADIN) 116,18 0,72
+Prt C (ADIN) 234,14 1,45Summary Results Report (v.1) (LLC)
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
+Additive Total Diet Conc.
+Monensin 0,00 0,00
+Lasalocid 0,00 0,00
+Decoquinate 0,00 0,00
+Yeast 0,00 0,00
+Beta Agonist 0,00 0,00
+Virginiamycin 0,00 0,00
+Aureomycin 0,00 0,00
+Chlortetracycline 0,00 0,00
+Oxytetracycline 0,00 0,00
+Salinomycin 0,00 0,00
+Zinc Bacitracin 0,00 0,00
+Enzymes 0,00 0,00
+Toxin Binders 0,00 0,00
+Flavor 0,00 0,00Nutrient Diet Conc. %Rqd Organic
+Ca 0,90 180 ­
+P 0,53 152 ­
+Mg 0,51 474 ­
+K 1,47 132 ­
+S 0,23 115 ­
+Na 0,55 189 ­
+Cl 0,57 190 ­
+Fe 210,31 1316 0,00
+Zn 68,24 129 0,00
+Cu 16,60 118 0,00
+Mn 68,44 455 0,00
+Se 0,58 193 0,00
+Co 0,66 602 0,00
+I 0,98 128 ­
+Vit­A 5,94 125 ­
+Vit­D 1,27 98 ­
+Vit­E 97,08 280 ­
+DCAD1 311 ­ ­
+DCAD2 244 ­ ­
+Niacin 0,05 ­ ­
+Biotin 0,00 ­ ­
+Choline 254,68 ­ ­
+Chromium 0,00 ­ 0,00
+Milk (const. milk prt.) 21.62 kgN P
+Intake (g) 433,56 84,67
+Productive (g) 137,79 21,81
+Urine (g) 152,18 1,40
+Fecal (g) 156,56 61,46
+Total Manure (g) 308,75 62,85
+Total Fecal (kg) 26,85
+Total Urine (kg) 17,31
+Total Wet Manure (kg) 44,16Productive N/Total N 32%
+Productive N/Urinary N 91%
+Manure N/Total N 71%
+Productive P/Total P 26%Summary Results Report (v.1) (LLC)
+AMTS Nutrition
+Farm: КТ Зенченко
+Cattle Group Name: Раздой 15 1
+Barn/Lot: ЛенинскийFBW: 700 kg
+BCS (1­5): 3,00
+ADG: 0,053 kg/dayMilk Fat: 3.70%DIM: 120 Input DMI: 16,1 kg
+Predicted DMI: 19,9 kg
+Days Pregnant: 20 Milk Prt: 3.15% (True) 3.39% (Crude)
