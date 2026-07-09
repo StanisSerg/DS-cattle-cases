@@ -354,7 +354,6 @@ pef солома: 88.3%
 
 **Связанные кейсы:**
 
-- [CASE-001](../CASE-001-bhb-threshold/CASE-001-bhb-threshold.md) — пример системной vs симптоматической коррекции метаболического дефицита
 - [CASE-002-analytics-example.md](reports/CASE-002-analytics-example.md) — полный расчёт рационов, энергии, протеина
 - [CASE-002-executive-summary.md](reports/CASE-002-executive-summary.md) — отчёт для руководства с финансовым прогнозом и рисками
 - [CASE-002-FPF-EXAMPLE.md](notes/CASE-002-FPF-EXAMPLE.md) — FPF-формализация решения с ChoiceRule
