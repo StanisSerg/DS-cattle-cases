@@ -1,0 +1,27 @@
+# Индекс кейсов DS-cattle-cases
+# Генерируется автоматически через scripts/case-new.sh
+# Ручное редактирование допускается, но при создании нового кейса индекс пересобирается.
+
+schema_version: "1.0"
+last_updated: 2026-07-12
+cases:
+- case_id: CASE-002
+  slug: zencht-leninsky-dynamics
+  farm: КТ Зенченко МТК Ленинский
+  author: Pilot
+  category: nutrition
+  tags:
+  - ration
+  - productivity
+  - dynamics
+  - leninsky
+  - CP
+  - DMI
+  - ЖК-№2
+  status: processed
+  dl_ref: []
+  rule_refs: []
+  fpf_context: []
+  created: 2026-06-08
+  updated: 2026-07-09
+  review_date: 2026-08-08

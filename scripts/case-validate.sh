@@ -14,11 +14,18 @@ warn() {
 
 validate_frontmatter() {
   local file="$1"
-  for key in case_id date farm category status; do
+  for key in case_id date farm category status schema_version; do
     if ! grep -qE "^${key}:" "$file"; then
       warn "missing frontmatter key '$key' in $file"
     fi
   done
+
+  # Проверка schema_version
+  local sv
+  sv="$(grep -E "^schema_version:" "$file" | sed 's/schema_version:[[:space:]]*//; s/["'"'"']//g' | tr -d ' ')"
+  if [[ -n "$sv" && "$sv" != "1.0" ]]; then
+    warn "unsupported schema_version '$sv' in $file (expected 1.0)"
+  fi
 }
 
 validate_links() {
@@ -89,11 +96,40 @@ if [[ "${1:-}" == "--all" || -z "${1:-}" ]]; then
     name="$(basename "$entry")"
     [[ "$name" == "README.md" ]] && continue
     [[ "$name" == "TEMPLATE-CASE.md" ]] && continue
+    [[ "$name" == "index.yaml" ]] && continue
     validate_case "$entry"
   done
 else
   validate_case "$CASES_DIR/$1"
 fi
+
+validate_index_consistency() {
+  local index_file="$ROOT/cases/index.yaml"
+  if [[ ! -f "$index_file" ]]; then
+    warn "missing cases/index.yaml"
+    return
+  fi
+
+  # Простая проверка: все директории кейсов есть в индексе
+  for entry in "$CASES_DIR"/*; do
+    [[ -e "$entry" ]] || continue
+    local name
+    name="$(basename "$entry")"
+    [[ "$name" == "index.yaml" ]] && continue
+    [[ "$name" == "README.md" ]] && continue
+    [[ "$name" == "TEMPLATE-CASE.md" ]] && continue
+
+    local case_id
+    case_id="$(echo "$name" | grep -oE '^CASE-[0-9]{3}')"
+    [[ -z "$case_id" ]] && continue
+
+    if ! grep -qE "^- case_id: $case_id$" "$index_file"; then
+      warn "case $case_id not found in cases/index.yaml"
+    fi
+  done
+}
+
+validate_index_consistency
 
 if [[ $ERR -ne 0 ]]; then
   echo

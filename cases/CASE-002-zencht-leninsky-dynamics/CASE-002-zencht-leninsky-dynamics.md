@@ -4,6 +4,7 @@
 case_id: CASE-002
 date: 2026-06-08
 date_updated: 2026-07-09
+schema_version: "1.0"
 farm: КТ Зенченко МТК Ленинский
 author: Pilot
 source_report: reports/Отчет_ЖК2_2026-07-07.md
@@ -12,6 +13,7 @@ tags: [ration, productivity, dynamics, leninsky, CP, DMI, ЖК-№2]
 status: processed
 rule_refs: []
 fpf_context: []
+review_date: 2026-08-08
 ---
 # CASE-002: КТ Зенченко МТК Ленинский — динамика рациона и продуктивности
 

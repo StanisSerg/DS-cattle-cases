@@ -5,14 +5,16 @@
 case_id: CASE-001
 date: YYYY-MM-DD
 date_updated: YYYY-MM-DD
+schema_version: "1.0"
 farm: [название/код фермы]
 author: [кто зафиксировал]
 category: [metabolic|reproduction|nutrition|economics|management]
 tags: [ketosis, bhb, dmi, bcs]
-status: raw|processed|archived
+status: raw|processed|archived|reviewed
 dl_ref: [DL-XXX или пусто]
 source_report: [CASE-XXX/reports/Отчет_...md или пусто]
 fpf_context: []  # Автоматически заполняется агентом через fpf_reference
+review_date: YYYY-MM-DD  # Дата следующего пересмотра кейса
 ---
 ```
 
