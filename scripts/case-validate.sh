@@ -14,7 +14,7 @@ warn() {
 
 validate_frontmatter() {
   local file="$1"
-  for key in case_id date farm category status schema_version; do
+  for key in case_id date farm category status schema_version pack_relations; do
     if ! grep -qE "^${key}:" "$file"; then
       warn "missing frontmatter key '$key' in $file"
     fi

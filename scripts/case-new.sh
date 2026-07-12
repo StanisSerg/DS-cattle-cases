@@ -88,6 +88,12 @@ existing.append({
     'dl_ref': [],
     'rule_refs': [],
     'fpf_context': [],
+    'pack_relations': {
+        'related_entities': [],
+        'related_methods': [],
+        'related_sota': [],
+        'related_dpf': [],
+    },
     'created': today,
     'updated': today,
     'review_date': review_date if review_date != 'YYYY-MM-DD' else None,

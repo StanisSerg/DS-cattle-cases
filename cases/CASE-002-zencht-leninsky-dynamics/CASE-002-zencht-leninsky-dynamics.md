@@ -13,6 +13,25 @@ tags: [ration, productivity, dynamics, leninsky, CP, DMI, ЖК-№2]
 status: processed
 rule_refs: []
 fpf_context: []
+pack_relations:
+  related_entities:
+    - CS.ENTITY.030
+    - CS.ENTITY.188
+    - CS.ENTITY.189
+    - CS.ENTITY.193
+    - CS.ENTITY.200
+    - CS.ENTITY.202
+    - CS.ENTITY.213
+    - CS.ENTITY.215
+  related_methods:
+    - CS.METHOD.006
+    - CS.METHOD.007
+  related_sota:
+    - CS.SOTA.056
+    - CS.SOTA.197
+    - CS.SOTA.201
+  related_dpf:
+    - CS.DPF.001
 review_date: 2026-08-08
 ---
 # CASE-002: КТ Зенченко МТК Ленинский — динамика рациона и продуктивности

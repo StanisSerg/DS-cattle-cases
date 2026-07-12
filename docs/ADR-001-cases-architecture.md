@@ -84,10 +84,15 @@ schema_version: "1.0"
 
 ## Следующие шаги
 
-1. Реализовать скрипт миграции `case-migrate.sh` на случай `schema_version > 1.0`.
-2. Добавить раздел связи с `PACK-cattle-science` (`related_entities`, `related_methods`, `related_sota`).
+1. ✅ Добавить раздел связи с `PACK-cattle-science` (`related_entities`, `related_methods`, `related_sota`, `related_dpf`). **Выполнено.**
+2. Реализовать скрипт миграции `case-migrate.sh` на случай `schema_version > 1.0`.
 3. Настроить pre-commit hook с `case-validate.sh --all`.
 4. Ввести периодический review-спринт для перехода кейсов в статус `reviewed`.
+
+## История изменений
+
+- 2026-07-12: ADR создан, внедрены `schema_version`, `cases/index.yaml`, `review_date`, обновлён валидатор.
+- 2026-07-12: Добавлена секция `pack_relations` в шаблон кейса, индекс и CASE-002.
 
 ---
 
