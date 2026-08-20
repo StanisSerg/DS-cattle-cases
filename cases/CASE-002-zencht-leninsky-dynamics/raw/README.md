@@ -16,9 +16,9 @@
 
 | Файл | Тип | Описание |
 |------|-----|----------|
-| Группы.xlsx | xlsx | Группы животных. |
-| Зенченко Динамика производства.xlsx | xlsx | Динамика производства. |
 | Сита.xlsx | xlsx | Данные по ситам. |
+
+> 20.08.2026 `Группы.xlsx` и `Зенченко Динамика производства.xlsx` удалены — кейс полностью перешёл на md-данные (`milk_dynamics_*.md`, `group_productivity_visit01_*.md`). Скрипт `scripts/generate_charts.py` (читал xlsx) устарел; актуальные скрипты графиков — `chart_len_milk_dynamics.py`, `chart_group_productivity_comparison.py`.
 
 ## План именования
 

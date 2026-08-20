@@ -7,7 +7,7 @@ date_updated: 2026-08-19
 schema_version: "1.0"
 farm: КТ Зенченко МТК Ленинский
 author: Pilot
-source_report: reports/Отчет_ЖК2_2026-07-07.md
+source_report: reports/Отчет_ЖК2_2026-08-19_bez-vody.md
 category: nutrition
 tags: [ration, productivity, dynamics, leninsky, CP, DMI, ЖК-№2]
 status: processed
@@ -38,7 +38,7 @@ review_date: 2026-08-08
 
 > Шаблон: [TEMPLATE-CASE.md](../../templates/TEMPLATE-CASE.md)
 > Конвейер: CASE → DL → RULE
-> Отчёт фактических результатов: [Отчет_ЖК2_2026-07-07.md](reports/Отчет_ЖК2_2026-07-07.md)
+> Отчёт фактических результатов: [Отчет_ЖК2_2026-08-19_bez-vody.md](reports/Отчет_ЖК2_2026-08-19_bez-vody.md)
 
 ---
 
@@ -323,14 +323,12 @@ pef солома: 88.3%
 
 **Отчёт Ж/К №2:**
 
-- Markdown: [Отчет_ЖК2_2026-07-07.md](reports/Отчет_ЖК2_2026-07-07.md)
-- DOCX: [Отчет_ЖК2_2026-07-07.docx](reports/Отчет_ЖК2_2026-07-07.docx)
+- Актуальный: [Отчет_ЖК2_2026-08-19_bez-vody.md](reports/Отчет_ЖК2_2026-08-19_bez-vody.md) ([PDF](reports/Отчет_ЖК2_2026-08-19_bez-vody.pdf), [DOCX](reports/Отчет_ЖК2_2026-08-19.docx)); шаблон — [TEMPLATE-006-production-bez-vody.md](reports/templates/TEMPLATE-006-production-bez-vody.md)
 
 **Исходные таблицы:**
 
-- Динамика производства: [Зенченко Динамика производства.xlsx](<raw/Зенченко Динамика производства.xlsx>)
-- Детализация по группам: [Группы.xlsx](raw/Группы.xlsx)
 - Пенсильванские сита (группа 2, 2026-07-08): [Сита.xlsx](raw/Сита.xlsx)
+- ~~Динамика производства / Группы (xlsx)~~ — удалены 20.08.2026, кейс перешёл на md-данные (см. суточные сводки и замеры по группам ниже)
 
 **Суточные сводки (актуальные, обновляются вручную):**
 
@@ -382,8 +380,6 @@ pef солома: 88.3%
 
 **Связанные кейсы:**
 
-- [CASE-002-analytics-example.md](reports/CASE-002-analytics-example.md) — полный расчёт рационов, энергии, протеина
-- [CASE-002-executive-summary.md](reports/CASE-002-executive-summary.md) — отчёт для руководства с финансовым прогнозом и рисками
 - [CASE-002-FPF-EXAMPLE.md](notes/CASE-002-FPF-EXAMPLE.md) — FPF-формализация решения с ChoiceRule
 
 ## Связь с PACK-cattle-science
