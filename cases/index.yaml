@@ -2,8 +2,8 @@
 # Генерируется автоматически через scripts/case-new.sh
 # Ручное редактирование допускается, но при создании нового кейса индекс пересобирается.
 
-schema_version: "1.0"
-last_updated: 2026-07-12
+schema_version: '1.0'
+last_updated: '2026-09-05'
 cases:
 - case_id: CASE-002
   slug: zencht-leninsky-dynamics
@@ -44,3 +44,75 @@ cases:
   created: 2026-06-08
   updated: 2026-07-09
   review_date: 2026-08-08
+- case_id: CASE-003
+  slug: druzhba-narodov
+  farm: Дружба Народов
+  author: Pilot
+  category: nutrition
+  tags: []
+  status: raw
+  dl_ref: []
+  rule_refs: []
+  fpf_context: []
+  pack_relations:
+    related_entities: []
+    related_methods: []
+    related_sota: []
+    related_dpf: []
+  created: '2026-09-05'
+  updated: '2026-09-05'
+  review_date: '2026-10-05'
+- case_id: CASE-004
+  slug: belovezhsky
+  farm: Беловежский
+  author: Pilot
+  category: nutrition
+  tags: []
+  status: raw
+  dl_ref: []
+  rule_refs: []
+  fpf_context: []
+  pack_relations:
+    related_entities: []
+    related_methods: []
+    related_sota: []
+    related_dpf: []
+  created: '2026-09-05'
+  updated: '2026-09-05'
+  review_date: '2026-10-05'
+- case_id: CASE-005
+  slug: sheni-agroprodukt
+  farm: Шени-Агропродукт
+  author: Pilot
+  category: nutrition
+  tags: []
+  status: raw
+  dl_ref: []
+  rule_refs: []
+  fpf_context: []
+  pack_relations:
+    related_entities: []
+    related_methods: []
+    related_sota: []
+    related_dpf: []
+  created: '2026-09-05'
+  updated: '2026-09-05'
+  review_date: '2026-10-05'
+- case_id: CASE-006
+  slug: tyshkovichi
+  farm: Тышковичи
+  author: Pilot
+  category: nutrition
+  tags: []
+  status: raw
+  dl_ref: []
+  rule_refs: []
+  fpf_context: []
+  pack_relations:
+    related_entities: []
+    related_methods: []
+    related_sota: []
+    related_dpf: []
+  created: '2026-09-05'
+  updated: '2026-09-05'
+  review_date: '2026-10-05'
