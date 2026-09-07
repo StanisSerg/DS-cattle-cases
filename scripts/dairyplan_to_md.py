@@ -47,7 +47,7 @@ def main() -> int:
         print(f"ошибка: дата данных {data_date} позже даты выгрузки {args.report_date}")
         return 1
 
-    out_path = args.case_dir / "raw" / f"dairyplan_produktivnost_{m.group(1)}.md"
+    out_path = args.case_dir / "raw" / "excel" / "Excel-MD" / f"dairyplan_produktivnost_{m.group(1)}.md"
 
     wb = openpyxl.load_workbook(args.xlsx, data_only=True)
     ws = wb.worksheets[0]
