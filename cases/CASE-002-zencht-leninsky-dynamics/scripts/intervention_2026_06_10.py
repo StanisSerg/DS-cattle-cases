@@ -63,9 +63,11 @@ def pair_analysis(d0: date, d1: date):
 
 
 def band_stats(pairs):
-    bands = {"0–60 (рост к пику)": lambda d: d <= 60,
-             "60–150 (плато)": lambda d: 60 < d <= 150,
-             "150+ (спад)": lambda d: d > 150}
+    bands = {"0–10 (двухразовое кормление)": lambda d: d <= 10,
+             "10–60 (рост к пику)": lambda d: 10 < d <= 60,
+             "60–100 (лечённая, плато)": lambda d: 60 < d <= 100,
+             "100–200 (контроль)": lambda d: 100 < d <= 200,
+             "200+ (контроль, спад)": lambda d: d > 200}
     out = {}
     for name, f in bands.items():
         sel = [(p0, p1) for _, dim, p0, p1 in pairs if f(dim)]
@@ -150,6 +152,36 @@ lines = [
     "|---|---|---|---|---|---|---|",
     *fmt(stats25),
     "",
+    "## Diff-in-diff: лечённая группа (0–100) против контроля внутри стада (100+)",
+    "",
+    "Интервенция 10.06.2026 была точечной: рацион для группы 0–100 дней + технологические",
+    "меры (контроль остатков и СВ, двухразовое кормление 0–10 дней, чистка остатков сухостоя).",
+    "Коровы 100+ дней рацион 0–100 не получили — они внутренний контроль. Разница приростов",
+    "(лечённые минус контроль) сравнивается с той же разницей год назад — двойное различие",
+    "снимает и сезонность, и общий фон хозяйства.",
+    "",
+]
+
+def _did(stats, treated_names, control_names):
+    t = [stats[n] for n in treated_names if stats[n]]
+    c = [stats[n] for n in control_names if stats[n]]
+    dt = sum(x["delta"] * x["n"] for x in t) / sum(x["n"] for x in t)
+    dc = sum(x["delta"] * x["n"] for x in c) / sum(x["n"] for x in c)
+    return dt, dc
+
+TREATED = ["0–10 (двухразовое кормление)", "10–60 (рост к пику)", "60–100 (лечённая, плато)"]
+CONTROL = ["100–200 (контроль)", "200+ (контроль, спад)"]
+dt26, dc26 = _did(stats26, TREATED, CONTROL)
+dt25, dc25 = _did(stats25, TREATED, CONTROL)
+lines += [
+    "| Год | Δ лечённые 0–100 | Δ контроль 100+ | Разница (леч − контр) |",
+    "|---|---|---|---|",
+    f"| 2026 (интервенция 10.06) | {dt26:+.1f} | {dc26:+.1f} | **{dt26 - dc26:+.1f}** |",
+    f"| 2025 (без интервенции) | {dt25:+.1f} | {dc25:+.1f} | {dt25 - dc25:+.1f} |",
+    "",
+    f"**Двойное различие: ({dt26 - dc26:+.1f}) − ({dt25 - dc25:+.1f}) = {(dt26 - dc26) - (dt25 - dc25):+.1f} кг** — ",
+    "чистый эффект интервенции на целевую группу поверх сезона и фона.",
+    "",
     "## График",
     "",
     "![Парный before/after](../../charts/intervention_2026-06-10.png)",
@@ -207,14 +239,16 @@ lines += [
 
 # --- график: средние до/после по когортам, 2026 vs 2025 ---
 fig, ax = plt.subplots(figsize=(10, 5.5))
-names = ["0–60 (рост к пику)", "60–150 (плато)", "150+ (спад)"]
+names = ["0–10", "10–60", "60–100", "100–200 (контр.)", "200+ (контр.)"]
+full_names = ["0–10 (двухразовое кормление)", "10–60 (рост к пику)", "60–100 (лечённая, плато)",
+              "100–200 (контроль)", "200+ (контроль, спад)"]
 x = range(len(names))
 w = 0.18
 for i, (stats, year, color0, color1) in enumerate((
         (stats26, 2026, "#9ecbe0", "#1f6f8b"),
         (stats25, 2025, "#cccccc", "#666666"))):
-    a0 = [stats[n]["avg0"] if stats[n] else 0 for n in names]
-    a1 = [stats[n]["avg1"] if stats[n] else 0 for n in names]
+    a0 = [stats[n]["avg0"] if stats[n] else 0 for n in full_names]
+    a1 = [stats[n]["avg1"] if stats[n] else 0 for n in full_names]
     off = -0.2 + i * 0.4
     ax.bar([xi + off - w / 2 for xi in x], a0, width=w, color=color0, label=f"{year} до")
     ax.bar([xi + off + w / 2 for xi in x], a1, width=w, color=color1, label=f"{year} после")
