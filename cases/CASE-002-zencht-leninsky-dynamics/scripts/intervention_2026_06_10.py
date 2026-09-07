@@ -104,6 +104,40 @@ pairs25, n_before25 = pair_analysis(date(2025, 6, 1), date(2025, 7, 1))
 stats25 = band_stats(pairs25)
 
 
+def _did(stats, treated_names, control_names):
+    t = [stats[n] for n in treated_names if stats[n]]
+    c = [stats[n] for n in control_names if stats[n]]
+    if not t or not c:
+        return None
+    dt = sum(x["delta"] * x["n"] for x in t) / sum(x["n"] for x in t)
+    dc = sum(x["delta"] * x["n"] for x in c) / sum(x["n"] for x in c)
+    return dt, dc
+
+
+TREATED = ["0–10 (двухразовое кормление)", "10–60 (рост к пику)", "60–100 (лечённая, плато)"]
+CONTROL = ["100–200 (контроль)", "200+ (контроль, спад)"]
+
+
+# --- плацебо-даты: все 30-дневные окна 2025–2026 через тот же расчёт ---
+all_dates_iso = sorted(f.name[:10] for f in MD_DIR.glob("*_dairyplan_produktivnost.md"))
+placebo = []  # (d0, d1, delta_all, did)
+for a in all_dates_iso:
+    d0 = date.fromisoformat(a)
+    for b in all_dates_iso:
+        d1 = date.fromisoformat(b)
+        if not (28 <= (d1 - d0).days <= 31):
+            continue
+        pairs, _ = pair_analysis(d0, d1)
+        if len(pairs) < 300:
+            continue
+        st = band_stats(pairs)
+        did = _did(st, TREATED, CONTROL)
+        if did is None:
+            continue
+        placebo.append((d0, d1, st["ИТОГО"]["delta"], did[0] - did[1]))
+placebo.sort()
+
+
 def fmt(stats):
     rows = []
     for name, s in stats.items():
@@ -162,15 +196,6 @@ lines = [
     "",
 ]
 
-def _did(stats, treated_names, control_names):
-    t = [stats[n] for n in treated_names if stats[n]]
-    c = [stats[n] for n in control_names if stats[n]]
-    dt = sum(x["delta"] * x["n"] for x in t) / sum(x["n"] for x in t)
-    dc = sum(x["delta"] * x["n"] for x in c) / sum(x["n"] for x in c)
-    return dt, dc
-
-TREATED = ["0–10 (двухразовое кормление)", "10–60 (рост к пику)", "60–100 (лечённая, плато)"]
-CONTROL = ["100–200 (контроль)", "200+ (контроль, спад)"]
 dt26, dc26 = _did(stats26, TREATED, CONTROL)
 dt25, dc25 = _did(stats25, TREATED, CONTROL)
 lines += [
@@ -181,6 +206,43 @@ lines += [
     "",
     f"**Двойное различие: ({dt26 - dc26:+.1f}) − ({dt25 - dc25:+.1f}) = {(dt26 - dc26) - (dt25 - dc25):+.1f} кг** — ",
     "чистый эффект интервенции на целевую группу поверх сезона и фона.",
+    "",
+]
+
+# --- раздел плацебо-дат ---
+real_did = dt26 - dc26
+placebo_pre = [(d0, d1, da, dd) for d0, d1, da, dd in placebo if d1 <= date(2026, 6, 10)]
+max_placebo_all = max(da for _, _, da, _ in placebo_pre)
+max_placebo_did = max(dd for _, _, _, dd in placebo_pre)
+lines += [
+    "## Плацебо-тест: те же расчёты с фиктивными датами интервенции",
+    "",
+    "Тот же парный расчёт (прирост когорты за 30 дней и разница «лечённые 0–100 минус контроль 100+»)",
+    "прогнан по всем 30-дневным окнам 2025–2026 **до** 10.06.2026. Если бы рост объяснялся сезоном,",
+    "отёлами или фоном года — фиктивные даты показывали бы тот же эффект, что и реальная.",
+    "",
+    "| Окно (фиктивная дата = начало) | Δ всей когорты | Разница леч−контроль |",
+    "|---|---|---|",
+]
+for d0, d1, da, dd in placebo_pre:
+    lines.append(f"| {d0.isoformat()} → {d1.isoformat()} | {da:+.1f} | {dd:+.1f} |")
+lines += [
+    f"| **10.06.2026 → 10.07.2026 (реальная)** | **{stats26['ИТОГО']['delta']:+.1f}** | **{real_did:+.1f}** |",
+    "",
+    "**Чтение результата (честно, две метрики — два ответа):**",
+    "",
+    f"1. **Прирост всей когорты — плацебо пройден.** Реальная дата: {stats26['ИТОГО']['delta']:+.1f} кг — ",
+    f"максимум за весь период (лучшее плацебо: {max_placebo_all:+.1f} кг). Ни одно окно за 21 месяц",
+    "не дало такого роста одних и тех же коров за 30 дней. Эффект привязан к дате, а не к сезону.",
+    "",
+    f"2. **Отрыв лечённой группы от контроля — плацебо не пройден.** Реальная дата: {real_did:+.1f} кг, ",
+    f"но летом 2025 были окна с бо́льшим градиентом (до {max_placebo_did:+.1f} кг) — свежие коровы всегда",
+    "растут быстрее поздних, и сила этого градиента гуляет по сезону. Поэтому точечный эффект",
+    "«именно рацион 0–100» этой метрикой отдельно не доказывается; доказательство точечности",
+    "остаётся на разбивке по мишеням (0–10 дней +11 кг при двухразовом кормлении) и на том,",
+    "что контроль 100+ в 2026 вырос (+0,9) при обязанном спаде (−1,2 в 2025).",
+    "",
+    "![Плацебо-тест](../../charts/placebo_intervention.png)",
     "",
     "## График",
     "",
@@ -279,6 +341,25 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter("%m.%y"))
 fig.autofmt_xdate()
 fig.tight_layout()
 fig.savefig(CASE / "charts" / "fresh_growth_rate.png", dpi=120)
+plt.close(fig)
+
+# --- график плацебо: разница «леч−контроль» по всем окнам ---
+fig, ax = plt.subplots(figsize=(12, 5))
+px = [d0 for d0, _, _, _ in placebo]
+py = [dd for _, _, _, dd in placebo]
+ax.plot(px, py, marker="o", ms=4, lw=1.2, color="#999999", label="фиктивные окна (30 дней)")
+ax.scatter([date(2026, 6, 10)], [real_did], color="#b03a3a", s=90, zorder=5,
+           label=f"реальная дата 10.06.2026 ({real_did:+.1f})")
+ax.axhline(0, color="#333", lw=0.8)
+ax.axvline(date(2026, 6, 10), color="#b03a3a", ls="--", lw=1.2, alpha=0.7)
+ax.set_title("Плацебо-тест: отрыв лечённой группы (0–100) от контроля (100+) по 30-дневным окнам")
+ax.set_ylabel("Δ леч − Δ контроль, кг")
+ax.legend()
+ax.grid(alpha=0.3)
+ax.xaxis.set_major_formatter(mdates.DateFormatter("%m.%y"))
+fig.autofmt_xdate()
+fig.tight_layout()
+fig.savefig(CASE / "charts" / "placebo_intervention.png", dpi=120)
 plt.close(fig)
 
 print("=== темп роста новотельных (окна 2026 с 03.2026) ===")
