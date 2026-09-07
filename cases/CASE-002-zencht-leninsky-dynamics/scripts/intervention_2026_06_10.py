@@ -161,6 +161,48 @@ lines = [
     "- Жара июля 2026 частично перекрывает окно — занижает эффект, не завышает.",
 ]
 
+# --- темп роста новотельных (DIM 0–60) по всем парам соседних срезов ---
+all_dates = sorted(f.name[:10] for f in MD_DIR.glob("*_dairyplan_produktivnost.md"))
+growth = []  # (окно_конец, год, месяц_начала, темп кг/30дн, n)
+for a, b in zip(all_dates, all_dates[1:]):
+    d0, d1 = date.fromisoformat(a), date.fromisoformat(b)
+    pairs, _ = pair_analysis(d0, d1)
+    fresh = [(p0, p1) for _, dim, p0, p1 in pairs if dim <= 60]
+    if len(fresh) < 10:
+        continue
+    window = (d1 - d0).days
+    rate = (sum(p1 - p0 for p0, p1 in fresh) / len(fresh)) / window * 30
+    growth.append((d1, d0.year, d0.month, rate, len(fresh)))
+
+lines += [
+    "",
+    "## Темп роста новотельных коров (DIM 0–60), кг за 30 дней — вся история",
+    "",
+    "Парный прирост одних и тех же свежих коров между соседними срезами, нормирован на 30 дней.",
+    "Новотельная растёт к пику физиологически — поэтому сравниваем темп с двумя базами:",
+    "со своим прошлым (окна до 10.06.2026) и с теми же месяцами 2025 года.",
+    "",
+    "| Окно | Темп 2026, кг/30дн | То же окно 2025 | Δ |",
+    "|---|---|---|---|",
+]
+for d1, y, m, rate, n in growth:
+    if y != 2026 or d1 < date(2026, 3, 1):
+        continue
+    same25 = [g for g in growth if g[1] == 2025 and g[2] == m]
+    r25 = f"{same25[0][3]:+.1f}" if same25 else "—"
+    diff = f"{rate - same25[0][3]:+.1f}" if same25 else "—"
+    mark = " **← после интервенции**" if d1 > date(2026, 6, 10) else ""
+    lines.append(f"| …→{d1.isoformat()} | {rate:+.1f} | {r25} | {diff}{mark} |")
+lines += [
+    "",
+    "![Темп роста новотельных](../../charts/fresh_growth_rate.png)",
+    "",
+    "## График",
+    "",
+    "![Парный before/after](../../charts/intervention_2026-06-10.png)",
+    "",
+]
+
 (CASE / "reports" / "intervention_2026-06-10.md").write_text("\n".join(lines), encoding="utf-8")
 
 # --- график: средние до/после по когортам, 2026 vs 2025 ---
@@ -185,6 +227,32 @@ ax.grid(alpha=0.3, axis="y")
 fig.tight_layout()
 fig.savefig(CASE / "charts" / "intervention_2026-06-10.png", dpi=120)
 plt.close(fig)
+
+# --- график: темп роста новотельных, вся история ---
+import matplotlib.dates as mdates
+fig, ax = plt.subplots(figsize=(12, 5))
+for year, color in ((2025, "#999999"), (2026, "#1f6f8b")):
+    pts = [(g[0], g[3]) for g in growth if g[1] == year]
+    ax.plot([p[0] for p in pts], [p[1] for p in pts], marker="o", ms=3.5, lw=1.6,
+            color=color, label=str(year))
+ax.axvline(date(2026, 6, 10), color="#b03a3a", ls="--", lw=1.4)
+ax.text(date(2026, 6, 12), ax.get_ylim()[1] - 0.5, "интервенция 10.06.2026", fontsize=9, color="#b03a3a")
+ax.set_title("Темп роста надоя новотельных коров (DIM 0–60), кг за 30 дней — парный прирост одних и тех же коров")
+ax.set_ylabel("кг / 30 дней")
+ax.legend()
+ax.grid(alpha=0.3)
+ax.xaxis.set_major_formatter(mdates.DateFormatter("%m.%y"))
+fig.autofmt_xdate()
+fig.tight_layout()
+fig.savefig(CASE / "charts" / "fresh_growth_rate.png", dpi=120)
+plt.close(fig)
+
+print("=== темп роста новотельных (окна 2026 с 03.2026) ===")
+for d1, y, m, rate, n in growth:
+    if y == 2026 and d1 >= date(2026, 3, 1):
+        same25 = [g for g in growth if g[1] == 2025 and g[2] == m]
+        r25 = f"{same25[0][3]:+.1f}" if same25 else "—"
+        print(f"…→{d1}: {rate:+.1f} кг/30дн (N={n}), 2025: {r25}")
 
 print("=== 2026 (10.06→10.07) ===")
 for n_, s in stats26.items():
