@@ -138,6 +138,33 @@ for a in all_dates_iso:
 placebo.sort()
 
 
+# --- декомпозиция «состав vs коровы» для окна интервенции и контроля 2025 ---
+def decomposition(d0: date, d1: date):
+    """Δ среднего надоя стада = вклад старых коров + вклад вошедших + вклад выбывших."""
+    before, after = load(d0), load(d1)
+    before = {n: v for n, v in before.items() if v[1] is not None and v[1] > 0}
+    after = {n: v for n, v in after.items() if v[1] is not None and v[1] > 0}
+    stay = set(before) & set(after)
+    enter = set(after) - set(before)
+    leave = set(before) - set(after)
+    n1 = len(after)
+    avg0 = sum(v[1] for v in before.values()) / len(before)
+    avg1 = sum(v[1] for v in after.values()) / len(after)
+    s0 = sum(before[n][1] for n in stay) / len(stay)
+    s1 = sum(after[n][1] for n in stay) / len(stay)
+    e1 = sum(after[n][1] for n in enter) / len(enter) if enter else 0
+    l0 = sum(before[n][1] for n in leave) / len(leave) if leave else 0
+    a = (len(stay) / n1) * (s1 - s0)                 # старые коровы
+    b = (len(enter) / n1) * (e1 - s0)                # вошедшие vs уровень старых
+    c = (len(leave) / n1) * (s0 - l0)                # выбывшие vs уровень старых
+    return dict(avg0=avg0, avg1=avg1, total=avg1 - avg0, stay_n=len(stay),
+                enter_n=len(enter), leave_n=len(leave), a=a, b=b, c=c, check=a + b + c)
+
+
+dec26 = decomposition(date(2026, 6, 10), date(2026, 7, 10))
+dec25 = decomposition(date(2025, 6, 1), date(2025, 7, 1))
+
+
 def fmt(stats):
     rows = []
     for name, s in stats.items():
@@ -243,6 +270,21 @@ lines += [
     "что контроль 100+ в 2026 вырос (+0,9) при обязанном спаде (−1,2 в 2025).",
     "",
     "![Плацебо-тест](../../charts/placebo_intervention.png)",
+    "",
+    "## Декомпозиция: сколько дал состав (отёлы), сколько — сами коровы",
+    "",
+    "Рост среднего надоя стада между срезами раскладывается на три части: рост коров,",
+    "которые были в стаде в оба среза; вклад вошедших (отёлы — их надой против уровня",
+    "старых); вклад выбывших (их уровень против старых). Прямой численный ответ на",
+    "аргумент «рост за счёт отёлов».",
+    "",
+    f"| Окно | Средний надой до → после | Δ всего | из него: старые коровы | вошедшие | выбывшие |",
+    "|---|---|---|---|---|---|",
+    f"| **10.06→10.07.2026** | {dec26['avg0']:.1f} → {dec26['avg1']:.1f} | **{dec26['total']:+.1f}** | {dec26['a']:+.1f} | {dec26['b']:+.1f} ({dec26['enter_n']} гол.) | {dec26['c']:+.1f} ({dec26['leave_n']} гол.) |",
+    f"| 01.06→01.07.2025 | {dec25['avg0']:.1f} → {dec25['avg1']:.1f} | {dec25['total']:+.1f} | {dec25['a']:+.1f} | {dec25['b']:+.1f} ({dec25['enter_n']} гол.) | {dec25['c']:+.1f} ({dec25['leave_n']} гол.) |",
+    "",
+    f"Читается так: из общего роста {dec26['total']:+.1f} кг вклад отёлов (вошедших) — {dec26['b']:+.1f} кг,",
+    f"а рост коров, доившихся ещё до интервенции, — {dec26['a']:+.1f} кг.",
     "",
     "## График",
     "",
