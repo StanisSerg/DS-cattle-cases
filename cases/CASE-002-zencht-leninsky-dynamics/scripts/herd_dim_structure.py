@@ -84,6 +84,34 @@ for d, n, avg_dim, b1, b2, b3 in summary:
     lines.append(row + "|")
 lines += [
     "",
+    "## Год к году по месяцам (средний надой группы, кг; Δ = 2026 − 2025)",
+    "",
+    "| Месяц | 0–100: 2025 | 2026 | Δ | 100–200: 2025 | 2026 | Δ | 200+: 2025 | 2026 | Δ |",
+    "|---|---|---|---|---|---|---|---|---|---|",
+]
+
+# месячные средние: год, месяц -> по каждой группе среднее от срезов месяца
+from collections import defaultdict
+monthly = defaultdict(lambda: [[], [], []])  # (y, m) -> [продуктивности групп 1..3 по срезам]
+for s in summary:
+    key = (s[0].year, s[0].month)
+    for i, band in enumerate((s[3], s[4], s[5])):
+        monthly[key][i].append(band[2])
+
+months_2025 = {m: monthly[(2025, m)] for m in range(1, 13) if (2025, m) in monthly}
+for m in sorted(months_2025):
+    if (2026, m) not in monthly:
+        continue
+    a25, a26 = monthly[(2025, m)], monthly[(2026, m)]
+    row = f"| {m:02d} "
+    for i in range(3):
+        v25 = sum(a25[i]) / len(a25[i])
+        v26 = sum(a26[i]) / len(a26[i])
+        row += f"| {v25:.1f} | {v26:.1f} | {v26 - v25:+.1f} "
+    lines.append(row + "|")
+
+lines += [
+    "",
     "## Графики",
     "",
     "![Средний DIM стада](../../charts/herd_avg_dim.png)",
@@ -91,6 +119,8 @@ lines += [
     "![Структура стада по DIM](../../charts/herd_dim_structure.png)",
     "",
     "![Продуктивность групп DIM](../../charts/herd_dim_productivity.png)",
+    "",
+    "![Год к году по месяцам](../../charts/herd_dim_yoy.png)",
     "",
 ]
 (CASE / "reports" / "herd_dim_structure.md").write_text("\n".join(lines), encoding="utf-8")
@@ -141,6 +171,29 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter("%m.%y"))
 fig.autofmt_xdate()
 fig.tight_layout()
 fig.savefig(CASE / "charts" / "herd_dim_productivity.png", dpi=120)
+plt.close(fig)
+
+# --- год к году по месяцам ---
+fig, axes = plt.subplots(1, 3, figsize=(14, 4.5), sharey=False)
+titles = ["0–100 дн (свежие)", "100–200 дн", "200+ дн"]
+month_labels = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
+for i, ax in enumerate(axes):
+    for year, color in ((2025, "#999999"), (2026, "#1f6f8b")):
+        pts = [(m, sum(monthly[(year, m)][i]) / len(monthly[(year, m)][i]))
+               for m in range(1, 13) if (year, m) in monthly]
+        ax.plot([p[0] for p in pts], [p[1] for p in pts], marker="o", ms=4, lw=1.8,
+                color=color, label=str(year))
+    ax.set_title(titles[i], fontsize=11)
+    ax.set_xticks(range(1, 13, 2))
+    ax.set_xticklabels([month_labels[k - 1] for k in range(1, 13, 2)], fontsize=8)
+    ax.grid(alpha=0.3)
+    if i == 0:
+        ax.set_ylabel("Средний надой, кг")
+    if i == 2:
+        ax.legend()
+fig.suptitle("Средний надой групп DIM: 2025 vs 2026 по месяцам, КТ Зенченко", fontsize=12)
+fig.tight_layout()
+fig.savefig(CASE / "charts" / "herd_dim_yoy.png", dpi=120)
 plt.close(fig)
 
 first, last = summary[0], summary[-1]
