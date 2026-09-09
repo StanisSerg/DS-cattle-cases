@@ -67,7 +67,8 @@ def main():
             ax.annotate(f'{v:.1f}', xy=(d, v), xytext=(0, 5), textcoords='offset points',
                         fontsize=7, color=BLUE, ha='center', alpha=0.85)
     ax.set_ylabel('Удой на дойную корову, л/сут')
-    ax.set_title('Ж/К №2 (Ленинский): продуктивность и реализация, 08.06.2026 — 19.08.2026')
+
+    ax.set_title(f'Ж/К №2 (Ленинский): продуктивность и реализация, 08.06.2026 — {df.index.max():%d.%m.%Y}')
     ax.legend(loc='lower right', fontsize=9)
     ax.grid(alpha=0.3)
     ax.margins(y=0.12)  # запас сверху/снизу, чтобы подписи не упирались в рамку
