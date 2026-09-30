@@ -13,7 +13,7 @@ tags: [ketosis, bhb, dmi, bcs]
 status: raw|processed|archived|reviewed
 dl_ref: [DL-XXX или пусто]
 source_report: [CASE-XXX/reports/Отчет_...md или пусто]
-fpf_context: []  # Автоматически заполняется агентом через fpf_reference
+fpf_context: []  # Заполняется агентом по локальной процедуре FPF (см. AGENTS.md проекта)
 review_date: YYYY-MM-DD  # Дата следующего пересмотра кейса
 ---
 ```
@@ -122,10 +122,11 @@ review_date: YYYY-MM-DD  # Дата следующего пересмотра к
 
 ## FPF-основание
 
-> **Автоматически подобрано через `fpf_reference`:**
-> - IDs: 
-> - Constraints: 
-> - Gaps: 
+> **Подобрано агентом по локальной процедуре FPF (таблица задача→паттерны + grep по спеке):**
+> - IDs (fpf_context): 
+> - Constraints (проверены перед финализацией): 
+> - Gaps / вопросы: 
+> - fpf_verified: "YYYY-MM-DD; grep FPF-Spec.md @<short-hash>"
 
 ---
 

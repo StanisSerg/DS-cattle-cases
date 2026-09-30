@@ -23,7 +23,7 @@ review_date: 2026-10-05
 
 > Шаблон: [templates/TEMPLATE-CASE.md](../../templates/TEMPLATE-CASE.md)
 > Конвейер: CASE → DL → RULE
-> Метод: [B-01.D-03 — операционная инструкция](../../../PACK-cattle-science/dept-practices/branches/B-01-report-control/B-01.D-03-instruction-zamer-vnesenie-dannyh.md)
+> Метод: [B-01.D-03 — операционная инструкция](../../../dept-practices/branches/B-01-report-control/B-01.D-03-instruction-zamer-vnesenie-dannyh.md)
 
 ---
 
